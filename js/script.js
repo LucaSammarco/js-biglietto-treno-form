@@ -47,6 +47,14 @@ bottone.addEventListener("click", function(){
 
   console.log(prezzo.toFixed(2));
 
+  document.querySelector("#userData").innerHTML = "Based on the <strong>" + userDistance + "</strong> km selected and your age of <strong>" + userAge + "</strong>, the final price will be:";
+
+    document.querySelector("#finalPrice").innerHTML = "<strong>€" + prezzo.toFixed(2) + "</strong>";
+
+    document.querySelector(".yourPrice").classList.remove("blur-effect");
+
+  
+
 
 })
 
