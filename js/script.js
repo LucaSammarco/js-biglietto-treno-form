@@ -23,3 +23,40 @@
 // document.addEventListener("click", function(){
 //     document.getElementById("demo").innerHTML = "Hello World";
 //   });
+
+
+
+const bottone = document.querySelector("button")
+
+const prezzoAlKm = 0.267113;
+let sconto = 0;
+
+bottone.addEventListener("click", function(){
+
+  let userDistance = document.querySelector("#km").value
+  let userAge = document.querySelector("#age").value
+
+  if (userAge > 63) {
+    sconto = 37.893;
+} else if (userAge < 18) {
+    sconto = 24.552;
+}
+
+  let prezzo = prezzoAlKm * userDistance;
+  prezzo = prezzo - (prezzo * sconto / 100);
+
+  console.log(prezzo.toFixed(2);
+
+
+})
+
+// )
+// if (userAge > 63) {
+//     sconto = 37.893;
+// } else if (userAge < 18) {
+//     sconto = 24.552;
+// }
+
+
+
+// if ()
