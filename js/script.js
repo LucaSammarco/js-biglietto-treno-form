@@ -45,18 +45,8 @@ bottone.addEventListener("click", function(){
   let prezzo = prezzoAlKm * userDistance;
   prezzo = prezzo - (prezzo * sconto / 100);
 
-  console.log(prezzo.toFixed(2);
+  console.log(prezzo.toFixed(2));
 
 
 })
 
-// )
-// if (userAge > 63) {
-//     sconto = 37.893;
-// } else if (userAge < 18) {
-//     sconto = 24.552;
-// }
-
-
-
-// if ()
