@@ -31,23 +31,24 @@ const bottone = document.querySelector("button")
 const prezzoAlKm = 0.267113;
 let sconto = 0;
 
-bottone.addEventListener("click", function(){
+bottone.addEventListener("click", function() {
 
   let userDistance = document.querySelector("#km").value
   let userAge = document.querySelector("#age").value
 
   if (userAge > 63) {
     sconto = 37.893;
-} else if (userAge < 18) {
+} else if (userAge < 21) {
     sconto = 24.552;
 }
 
   let prezzo = prezzoAlKm * userDistance;
+  
   prezzo = prezzo - (prezzo * sconto / 100);
 
   console.log(prezzo.toFixed(2));
 
-  document.querySelector("#userData").innerHTML = "Based on the <strong>" + userDistance + "</strong> km selected and your age of <strong>" + userAge + "</strong>, the final price will be:";
+    document.querySelector("#userData").innerHTML = "Based on the <strong>" + userDistance + "</strong> km selected and your age of <strong>" + userAge + "</strong>, the final price will be:";
 
     document.querySelector("#finalPrice").innerHTML = "<strong>€" + prezzo.toFixed(2) + "</strong>";
 
